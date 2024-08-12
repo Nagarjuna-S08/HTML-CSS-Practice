@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      body{
+         height: 100vh;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         perspective:800px;
+         color: white;
+      }
+      .container{
+         position: relative;
+         width: 80px;
+         height: 80px;
+         animation: rotate 10s linear infinite;
+         cursor: pointer;
+         transform-style: preserve-3d;  
+      }
+      .side{
+         position: absolute;
+         width: 100%;
+         height: 100%;
+      }
+      .s1{
+         background-color: black;
+         transform: translateZ(40px);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size:50px;
+      }
+      .s2{
+         background-color: blue;
+         transform: rotateY(180deg) translateZ(40px);
+      }
+      .s3{
+         background-color: blueviolet;
+         transform:rotateX(90deg) translateZ(40px);
+      }
+      .s4{
+         background-color: rgb(43, 226, 83);
+         transform:rotateX(270deg) translateZ(40px);
+      }
+      .s5{
+         background-color: rgb(255, 49, 22);
+         transform:rotateY(270deg) translateZ(40px); 
+      }
+      .s6{
+         background-color: rgb(214, 201, 21);
+         transform:rotateY(90deg) translateZ(40px); 
+      }
+     .ken{
+        margin-left:40px;
+     } 
+     .container:focus{
+        transform: translateZ(10000px);
+     }
+     .s11{
+        margin-right: 20px;
+        animation: f 10s ease-in-out infinite ;
+     }
+     .s12{
+        animation: s 10s ease-in-out 2ms infinite ;
+     }
+     .s13{
+        animation: t 10s ease-in-out 4ms infinite ;
+     }
+     .s14{
+        animation: fo 10s ease-in-out 6ms infinite ;
+     }
+     .s15{
+        animation: fi 10s ease-in-out 8ms infinite ;
+     }
+     .s16{
+        animation: si 10s ease-in-out 8ms infinite ;
+     }
+     .s17{
+        animation: se 10s ease-in-out 10ms infinite ;
+     }
+     .s18{
+        animation: e 10s ease-in-out 12ms infinite ;
+     }
+
+     .s19{
+        margin-left:60px;
+        animation: n 10s ease-in-out 14ms infinite ;
+     }
+     @keyframes f{
+        0%{
+            transform:translateY(-200px);
+        }
+        50%{
+            transform: rotateY(270deg) translateY(-200px);
+        }
+        70%{
+            transform:rotateX(360deg);
+        }
+        90%{
+            transform: rotateZ(270deg) rotateY(360deg);
+        }
+        100%{
+            transform:translateY(-200px);
+        }
+     }
+     @keyframes s{
+        0%{
+            transform:translateY(-200px);
+        }
+        50%{
+            transform: rotateY(270deg) translateY(-200px);
+        }
+        70%{
+            transform:rotateX(360deg);
+        }
+        90%{
+            transform: rotateZ(270deg) rotateY(360deg);
+        }
+        100%{
+            transform:translateY(-200px);
+        }
+     }
+     @keyframes t{
+        0%{
+            transform:translateY(-200px);
+        }
+        50%{
+            transform: rotateY(270deg) translateY(-200px);
+        }
+        70%{
+            transform:rotateX(360deg);
+        }
+        90%{
+            transform: rotateZ(270deg) rotateY(360deg);
+        }
+        100%{
+            transform:translateY(-200px);
+        }
+     }
+     @keyframes fo{
+        0%{
+            transform:translateY(-200px);
+        }
+        50%{
+            transform: rotateY(270deg) translateY(-200px);
+        }
+        70%{
+            transform:rotateX(360deg);
+        }
+        90%{
+            transform: rotateZ(270deg) rotateY(360deg);
+        }
+        100%{
+            transform:translateY(-200px);
+        }
+     }
+     @keyframes fi{
+        0%{
+            transform:translateY(-200px);
+        }
+        50%{
+            transform: rotateY(270deg) translateY(-200px);
+        }
+        70%{
+            transform:rotateX(360deg);
+        }
+        90%{
+            transform: rotateZ(270deg) rotateY(360deg);
+        }
+        100%{
+            transform:translateY(-200px);
+        }
+     }
+     @keyframes si{
+        0%{
+            transform:translateY(-200px);
+        }
+        50%{
+            transform: rotateY(270deg) translateY(-200px);
+        }
+        70%{
+            transform:rotateX(360deg);
+        }
+        90%{
+            transform: rotateZ(270deg) rotateY(360deg);
+        }
+        100%{
+            transform:translateY(-200px);
+        }
+     }
+     @keyframes se{
+        0%{
+            transform:translateY(-200px);
+        }
+        50%{
+            transform: rotateY(270deg) translateY(-200px);
+        }
+        70%{
+            transform:rotateX(360deg);
+        }
+        90%{
+            transform: rotateZ(270deg) rotateY(360deg);
+        }
+        100%{
+            transform:translateY(-200px);
+        }
+     }
+     @keyframes e{
+        0%{
+            transform:translateY(-200px);
+        }
+        50%{
+            transform: rotateY(270deg) translateY(-200px);
+        }
+        70%{
+            transform:rotateX(360deg);
+        }
+        90%{
+            transform: rotateZ(270deg) rotateY(360deg);
+        }
+        100%{
+            transform:translateY(-200px);
+        }
+     }
+     @keyframes n{
+        0%{
+            transform:translateY(-200px);
+        }
+        50%{
+            transform: rotateY(270deg) translateY(-200px);
+        }
+        70%{
+            transform:rotateX(360deg);
+        }
+        90%{
+            transform: rotateZ(270deg) rotateY(360deg);
+        }
+        100%{
+            transform:translateY(-200px);
+        }
+     }
+
+   </style>
+</head>
+<body>
+<div>
+
+</div>
+   <div class="container s11">
+        <div class="side s1">N</div>
+        <div class="side s2"></div>
+        <div class="side s3"></div>
+        <div class="side s4"></div>
+        <div class="side s5"></div>
+        <div class="side s6"></div>
+   </div>
+   <div class="container ken s12">
+    <div class="side s1">A</div>
+    <div class="side s2"></div>
+    <div class="side s3"></div>
+    <div class="side s4"></div>
+    <div class="side s5"></div>
+    <div class="side s6"></div>
+   </div>
+
+</div>
+<div class="container ken s13">
+ <div class="side s1">G</div>
+ <div class="side s2"></div>
+ <div class="side s3"></div>
+ <div class="side s4"></div>
+ <div class="side s5"></div>
+ <div class="side s6"></div>
+</div>
+
+</div>
+<div class="container ken s14">
+ <div class="side s1">A</div>
+ <div class="side s2"></div>
+ <div class="side s3"></div>
+ <div class="side s4"></div>
+ <div class="side s5"></div>
+ <div class="side s6"></div>
+</div>
+
+</div>
+<div class="container ken s15">
+ <div class="side s1">R</div>
+ <div class="side s2"></div>
+ <div class="side s3"></div>
+ <div class="side s4"></div>
+ <div class="side s5"></div>
+ <div class="side s6"></div>
+</div>
+
+</div>
+<div class="container ken s16">
+ <div class="side s1">J</div>
+ <div class="side s2"></div>
+ <div class="side s3"></div>
+ <div class="side s4"></div>
+ <div class="side s5"></div>
+ <div class="side s6"></div>
+</div>
+
+</div>
+<div class="container ken s17">
+ <div class="side s1">U</div>
+ <div class="side s2"></div>
+ <div class="side s3"></div>
+ <div class="side s4"></div>
+ <div class="side s5"></div>
+ <div class="side s6"></div>
+</div>
+
+</div>
+<div class="container ken s18">
+ <div class="side s1">N</div>
+ <div class="side s2"></div>
+ <div class="side s3"></div>
+ <div class="side s4"></div>
+ <div class="side s5"></div>
+ <div class="side s6"></div>
+</div>
+
+</div>
+<div class="container ken s19">
+ <div class="side s1">A</div>
+ <div class="side s2"></div>
+ <div class="side s3"></div>
+ <div class="side s4"></div>
+ <div class="side s5"></div>
+ <div class="side s6"></div>
+</div>
+</body>
+</html>

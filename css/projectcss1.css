@@ -1,0 +1,41 @@
+body{
+    background-image: url("/images/back.png") ;
+    background-repeat: no-repeat;
+    background-size:  600px ;
+}
+.form{
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    border: 10px solid black;
+    border-radius: 20px 20px;
+    padding: 2em;
+    box-shadow: 5px 10px 10px gray;
+    background-image: url("/images/back.png") ;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    margin: auto;
+    
+
+}
+#name{
+    align-content: center;
+    text-decoration: double;
+    margin:10px;
+}
+#mail{
+    align-content: center;
+    text-decoration: double;
+    margin:10px;
+}
+#pass{
+
+    align-content: center;
+    text-decoration: double;
+    margin:10px;
+}
+#radio{
+    align-content: center;
+    text-decoration: double;
+    margin:10px;
+}

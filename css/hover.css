@@ -1,0 +1,48 @@
+body{
+    background-color:lightblue;
+}
+.icons{
+   
+    top: 200px;
+    left: 100px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.insta{
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+    
+}
+.facebook{
+    padding: 20px ;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+}
+.a{
+    overflow: hidden;
+}
+.whatsapp{
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+   
+}
+.faceboo{
+   position:absolute;
+   z-index: 3;
+   transition: color 0.5s;
+}
+.instagram{
+    position:absolute;
+    z-index: 3; 
+    transition: color 0.5s;
+}
+.whatsap{
+position:absolute;
+z-index: 3;
+transition: color 0.5s;
+}

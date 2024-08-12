@@ -1,0 +1,129 @@
+.card{
+    border: 1px solid gold;
+    box-shadow:10px 10px 10px lightslategray;
+    background-color:#ffd000cb;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 400px;
+    height: 600px;
+    margin: auto;
+    border-radius: 20px;
+}
+.topicon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.top1 {
+    position: relative;
+    top: 10px;
+    right: 160px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    box-shadow: 3px 3px 4px gray;
+    border-radius: 10px;
+}
+.top2{
+    position: relative;
+    left: 150px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    box-shadow: 3px 3px 4px gray;
+    border-radius: 10px;
+}
+
+.photo{
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+}
+.pho{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.detail{
+    text-align: center;
+}
+.instagram{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 100px;
+}
+.facebook{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 118px;
+}
+.whatsapp{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 138px;
+}
+.logos{
+    position: relative;
+    left: 20px;
+}
+.resume{
+    position: relative;
+    left:130px;
+    margin-top: 30px;
+}
+.res{
+    margin: auto;
+    border: 1px solid black;
+    color: aliceblue;
+    height: 40px;
+    width: 150px;
+    background-color: black;
+    box-shadow: 4px 8px 5px grey;
+    border-radius: 20px;
+    padding-bottom: 50px; 
+}
+.personalinfo{
+    margin: auto;
+    position: relative;
+    left: 100px;
+}
+#ph{
+    position: relative;
+    left:40px;
+}
+.sp1{
+    position: relative;
+    bottom: 22px;
+}
+.sp{
+    display: block;
+    margin: auto;
+    position: relative;
+    bottom: 20px;
+    left: 55px;
+}
+.sp2{
+    margin: auto;
+    position: relative;
+    bottom: 20px;
+    left: 30px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.card:hover{
+
+}
+.a:hover{
+    
+}

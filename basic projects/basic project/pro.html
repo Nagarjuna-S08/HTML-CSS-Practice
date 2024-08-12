@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border: 2px solid black;
+            text-align: center;   
+            border-collapse: collapse;
+        }
+        table{
+            max-width:100%;
+            max-height: 100%;
+        }
+        .outerdiv{
+            display: grid;
+            grid-template-columns:0.5fr 2fr;
+        }
+        .im{
+            height: 100px;
+            width: 130px;
+        }
+        .head{
+            background-color: gray;
+            height: 40px;
+            text-align:left;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .pp{
+            margin-top: 100px;
+        }
+        .aa{
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+            text-align: left;
+        }
+        .a12{
+            border: 2px solid white;
+            text-align:left;
+            height: 30px;
+        }
+        .a12:hover{
+            background-color: aqua
+        }
+        .form{
+            display:block;
+            padding: 10px;
+            margin: 10px;
+        }
+        .h{
+            color:black;
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h2>Mr.S.Nagarjuna</h2> 
+    </div>
+    <div class="outerdiv">
+        <div class="aita">
+            <img src="profile.png" alt="camel" class="im">
+           <div class="a">
+            
+                <div class="a12"><a href="" class="aa" id="a1">Home</a><br></div>
+                <div class="a12"><a href="" class="aa">career</a><br></div> 
+                <div class="a12"><a href="" class="aa">contact</a><br></div> 
+                <div class="a12"><a href="" class="aa">About</a><br></div>
+            
+          </div>
+          <div class="pp">
+            <p>"do something important in life.i convert green grass to code."</p>
+            <p>-S.Nagarjuna</p>
+          </div>
+            
+        </div>
+        <div>
+            <div>
+                <h2>About me</h2>
+                <p>I am currently pursuing a B.Tech in Information Technology at Velammal College of Engineering and Technology. As a passionate and skilled full-stack developer, I have a strong command of programming languages including Java, C, C++, and Python. I am dedicated to leveraging my technical expertise to develop innovative solutions and contribute effectively to software development projects.</p>
+            </div>
+            <div>
+                <h2>My career</h2>
+                <p>As a passionate and skilled full-stack developer, I have a strong command of programming languages including Java, C, C++, and Python. I am dedicated to leveraging my technical expertise to develop innovative solutions and contribute effectively to software development projects. Additionally, I have a keen interest in game development and am always eager to learn and explore new technologies and methodologies in this field.</p>
+            </div>
+            <hr>
+            <div>
+                <h2>How Can I Help You?</h2>
+                <table >
+                    <thead class="h">
+                        <tr>
+                            <td>SKILL1</td>
+                            <td>SKILL2</td>
+                            <td>SKILL3</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="" alt=""></td>
+                            <td><img src="" alt=""></td>
+                            <td><img src="" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>FrontEnd - [HTML,CSS,JS,Framework:Angular]</td>
+                            <td>BackEnd - [c# , Framework : .Net 8 WebApi ]</td>
+                            <td>Database - Postgre SQL</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="form">
+                    <label for="1">Email:</label>
+                    <input type="text" value="nagarjuna8102004@gmail.com" name="" id="1"><br>
+                    <label for="2">Mobile:</label>
+                    <input type=" text" value="9944972187" id="2"><br><br>
+                    <textarea name="n" id="" cols="30" rows="8">Enter your message</textarea>
+                    <br><button>submit</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

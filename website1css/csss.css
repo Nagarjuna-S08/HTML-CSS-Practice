@@ -1,0 +1,119 @@
+body{
+ 
+ background-image:url("/bed.jpg");
+ height: 100vh;
+ background-position: center;
+ background-size: cover;
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-weight: 100;
+ font-style: oblique;
+ font-display:unset;
+ overflow: hidden;
+ position: relative;
+ 
+}
+
+.nevigation{
+display: grid;
+grid-template-columns: 30% 70%;
+align-items: center;
+justify-content: center;
+}
+.about{
+    text-align: center;
+    color: white;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 20% 20%;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    height: 20px;
+}
+.title{
+  font-size: 30px;
+  color: white;
+}
+.anchor{
+    text-align: right;
+    margin-right: 20px;
+}
+a{
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+a:first-child{
+    border-bottom: 3px solid rgb(92, 223, 92);
+   border-radius: 4px;
+}
+a:hover{
+   border-bottom: 3px solid rgb(92, 223, 92);
+   border-radius: 4px;
+}
+.about{
+    position: relative;
+    top: 150px;
+}
+.buttons{
+    position: relative;
+    top:170px;
+    left:440px;
+    margin: auto;
+}
+.button{
+    background: transparent;
+    position: relative;
+    height: 40px;
+    width: 190px;
+    border: 3px solid lightgreen;
+    border-radius: 20px;
+    color: white;
+    margin:10px;
+    transition-property: all;
+   overflow: hidden;
+   z-index: 3;
+}
+.button::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width:0%;
+    left: 0;
+    background:linear-gradient(-45deg,lightgreen,rgb(255, 255, 152));
+    transition-duration: 0.5s;
+    z-index: -1;
+}
+.button:hover::after{
+  width: 100%;
+}
+.button:hover{
+    color: black;
+}
+a{
+    transition: all 0.5s;
+}
+a:hover{
+    color: black;
+    transform: rotateY(3px);
+}
+a:active{
+ color:rgb(40, 212, 224);
+}
+.button:active{
+    color:rgb(40, 212, 224);
+}
+h1{
+    font-size: 50px;
+    transition: 0.6s;
+}
+h1:hover{
+    color:aquamarine;
+
+}
+
+

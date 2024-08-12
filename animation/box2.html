@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+      .card{
+    border: 1px solid gold;
+    box-shadow:10px 10px 10px lightslategray;
+    background-color:#ffd000cb;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 400px;
+    height: 600px;
+    margin: auto;
+    border-radius: 20px;
+}
+.topicon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.top1 {
+    position: relative;
+    top: 10px;
+    right: 160px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    box-shadow: 3px 3px 4px gray;
+    border-radius: 10px;
+}
+.top2{
+    position: relative;
+    left: 150px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    box-shadow: 3px 3px 4px gray;
+    border-radius: 10px;
+}
+
+.photo{
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+}
+.pho{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.detail{
+    text-align: center;
+}
+.instagram{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 100px;
+}
+.facebook{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 118px;
+}
+.whatsapp{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 138px;
+}
+.logos{
+    position: relative;
+    left: 20px;
+}
+.resume{
+    position: relative;
+    left:130px;
+    margin-top: 30px;
+}
+.res{
+    margin: auto;
+    border: 1px solid black;
+    color: aliceblue;
+    height: 40px;
+    width: 150px;
+    background-color: black;
+    box-shadow: 4px 8px 5px grey;
+    border-radius: 20px;
+    padding-bottom: 50px; 
+}
+.personalinfo{
+    margin: auto;
+    position: relative;
+    left: 100px;
+}
+#ph{
+    position: relative;
+    left:40px;
+}
+.sp1{
+    position: relative;
+    bottom: 22px;
+}
+.sp{
+    display: block;
+    margin: auto;
+    position: relative;
+    bottom: 20px;
+    left: 55px;
+}
+.sp2{
+    margin: auto;
+    position: relative;
+    bottom: 20px;
+    left: 30px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+body{
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow-x: hidden;
+}
+.container{
+   position: relative;
+   width: 400px;
+   height: 600px;
+   background-color: black;
+   border-radius: 20px;
+   transform-style: preserve-3d;
+   animation: rotate 20s linear infinite;
+   cursor: pointer;
+   transition: all 0.4s ease-in;
+   transform-origin:center;
+}
+.card{
+   position: absolute;
+}
+.card2{
+  transform: rotateY(180deg) translateZ(10px);
+}
+.fill{
+   background-color: black;
+   transform: rotateY(180deg) translateZ(10px);
+}
+.hoverme{
+   position: relative;
+   left: 470px;
+   width: 50px;
+   border: 1px solid black;
+}
+.hoverme:hover+.container{ 
+   transition: all 0.4s ease-in;
+   transform: rotateY(180deg);
+}
+    </style>
+   </head>
+<body>
+   <div class="hoverme">
+      <button>hello hover me </button>
+    </div>
+   <div class="container">
+      <div class="card card1">
+         <div class="topicon">
+             <button type="submit" class="top1"><ion-icon name="apps-outline"></button>
+             <button type="submit" class="top2"><ion-icon name="accessibility-outline"></ion-icon></button> 
+         </div>
+         <div class="photo">
+             <img src="single1.jpg" alt="" class="pho">
+         </div>
+         <div class="detail">
+             <h2>S.Nagarjuna</h2>
+             <h3>Velammal college of Enginering and Technology</h3>
+         </div>
+         <div class="logos">
+             <a href="https://instagram.com/arjun__nj?igshid=NzZhOTFlYzFmZQ==" class="i"><ion-icon name="logo-instagram" class="instagram"></ion-icon></a>
+             <a href="" class="f"><ion-icon name="logo-facebook" class="facebook"></ion-icon></a></a>
+             <a href="https://wa.me/9944972187" class="w"><ion-icon name="logo-whatsapp" class="whatsapp"></ion-icon></a>
+         </div>
+         <div class="resume">
+            <button type="submit" class="res" style="text-align: center;"><h3>Resume</h3></button>
+         </div>
+         <div class="personalinfo">
+             <h3 id="ph">+919944972187</h3>
+             <h3><span class="sp1">76/14 Bharathiyar Main Road</span><div class="perstreet"><span class="sp">S.S.Colony</span><span class="sp">Madurai-16</span><span class="sp2">pin code_6250016</span></madurai-19br></div></h3>
+         </div>
+     </div>
+
+      <div class="card fill"></div>
+
+     <div class="card card2">
+      <div class="topicon">
+          <button type="submit" class="top1"><ion-icon name="apps-outline"></button>
+          <button type="submit" class="top2"><ion-icon name="accessibility-outline"></ion-icon></button> 
+      </div>
+      <div class="photo">
+          <img src="shree.jpg" alt="" class="pho">
+      </div>
+      <div class="detail">
+          <h2>M.Shree Maharajan</h2>
+          <h3>American college</h3>
+      </div>
+      <div class="logos">
+          <a href="https://instagram.com/itz_._shree_._?igshid=NzZhOTFlYzFmZQ==" class="i"><ion-icon name="logo-instagram" class="instagram"></ion-icon></a>
+          <a href="" class="f"><ion-icon name="logo-facebook" class="facebook"></ion-icon></a></a>
+          <a href="https://wa.me/8838640195" class="w"><ion-icon name="logo-whatsapp" class="whatsapp"></ion-icon></a>
+      </div>
+      <div class="resume">
+         <button type="submit" class="res" style="text-align: center;"><h3>Resume</h3></button>
+      </div>
+      <div class="personalinfo">
+          <h3 id="ph">+918838640195</h3>
+          <h3><span class="sp1">Navalan Nagar By-pass raod</span><div class="perstreet"><span class="sp">S.S.Colony</span><span class="sp">Madurai-16</span><span class="sp2">pin code_6250016</span></madurai-19br></div></h3>
+      </div>
+  </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
